@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="MindLink device ecosystem: wearables, connectors, and edge units.">
+  <title>MindLink — Devices</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .rotatebox {
+      width: 60px;
+      height: 60px;
+      background: #041f3d;
+      animation: rotateIt 3s linear infinite;
+    }
+
+    @keyframes rotateIt {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+
+<body class="style-rotate">
+  <div class="bg-dots"></div>
+
+  <!-- Cursor-responsive dot grid -->
+  <div class="cursor-dots">
+    <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+  </div>
+
+  <!-- Floating particles -->
+  <div class="floating-particle"></div>
+  <div class="floating-particle"></div>
+  <div class="floating-particle"></div>
+  <div class="floating-particle"></div>
+  <div class="floating-particle"></div>
+  <div class="floating-particle"></div>
+
+  <div class="bg-fade"></div>
+  <header>
+    <h1>MindLink Devices & Form Factors</h1>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="overview.html">Overview</a> |
+      <a href="signals.html">Signals</a> |
+      <a href="devices.html">Devices</a> |
+      <a href="AIengine.html">AI Engine</a> |
+      <a href="usecases.html">Use Cases</a> |
+      <a href="ethics.html">Safety & Ethics</a> |
+      <a href="contact.html">Contact</a>
+    </nav>
+    <hr>
+  </header>
+
+  <main>
+    <section>
+      <h2>Device Catalog (Concept)</h2>
+      <article>
+        <h3>NeuroBand (Headband)</h3>
+        <p>Primary sensor array for general-purpose BCI. Comfortable, rechargeable, 8-16 channel EEG for intent
+          detection.</p>
+      </article>
+
+      <article>
+        <h3>EarClip (Discrete)</h3>
+        <p>Minimalist ear-worn sensor for daily wear. Lower channel count but high user acceptance.</p>
+      </article>
+
+      <article>
+        <h3>WristHub (Edge Unit)</h3>
+        <p>Local preprocessing, short-term buffering, wireless uplink to AI engine. Acts as a gateway for device
+          orchestration.</p>
+      </article>
+    </section>
+
+    <section>
+      <br><br>
+      <div class="rotatebox"></div><br><br>
+      <h2>Comparison Table</h2>
+      <table border="1">
+        <tr>
+          <th>Device</th>
+          <th>Role</th>
+          <th>Battery</th>
+          <th>Connectivity</th>
+        </tr>
+        <tr>
+          <td>NeuroBand</td>
+          <td>Main sensing</td>
+          <td>8–10 hrs</td>
+          <td>BLE / Edge</td>
+        </tr>
+        <tr>
+          <td>EarClip</td>
+          <td>Everyday sensing</td>
+          <td>12–14 hrs</td>
+          <td>BLE</td>
+        </tr>
+        <tr>
+          <td>WristHub</td>
+          <td>Edge processing</td>
+          <td>24 hrs</td>
+          <td>Wi-Fi / LTE</td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>Design Philosophy</h2>
+      <ul>
+        <li>Modularity — devices plug into a single API layer.</li>
+        <li>Comfort — extended use requires ergonomic design.</li>
+        <li>Privacy by design — sensitive data remains encrypted on the edge.</li>
+      </ul>
+      <img src="Images/page4.png" width="400" height="400"><br><br>
+    </section>
+  </main>
+
+  <footer>
+    <hr>
+    <p>© 2025 MindLink — Concept prototype. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>

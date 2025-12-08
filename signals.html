@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="How MindLink captures and processes neural signals.">
+  <title>MindLink — Signals</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .move {
+      position: relative;
+      animation: moveText 3s infinite alternate;
+    }
+
+    @keyframes moveText {
+      0% {
+        left: 0px;
+      }
+
+      100% {
+        left: 50px;
+      }
+    }
+  </style>
+</head>
+
+<body class="style-move">
+  <div class="bg-dots"></div>
+
+  <!-- Cursor-responsive dot grid -->
+  <div class="cursor-dots">
+    <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+  </div>
+
+  <!-- Floating particles -->
+  <div class="floating-particle"></div>
+  <div class="floating-particle"></div>
+  <div class="floating-particle"></div>
+  <div class="floating-particle"></div>
+  <div class="floating-particle"></div>
+  <div class="floating-particle"></div>
+
+  <div class="bg-fade"></div>
+  <header>
+    <h1 class="move">How Signals Are Captured</h1>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="overview.html">Overview</a> |
+      <a href="signals.html">Signals</a> |
+      <a href="devices.html">Devices</a> |
+      <a href="AIengine.html">AI Engine</a> |
+      <a href="usecases.html">Use Cases</a> |
+      <a href="ethics.html">Safety & Ethics</a> |
+      <a href="contact.html">Contact</a>
+    </nav>
+    <hr>
+  </header>
+
+  <main>
+    <section>
+      <h1 class="move">How Signals Are Captured</h1>
+      <p>
+        MindLink uses non-invasive neural sensors designed for high signal-to-noise ratio while remaining comfortable
+        for extended wear.
+        Primary sensing modalities in the concept:
+      </p>
+      <ul>
+        <li>Scalp EEG (compact, wearable headband)</li>
+        <li>Ear-EEG (discreet earclip sensors)</li>
+        <li>Peripheral biosignals (EMG for gesture confirmation)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Preprocessing Pipeline</h2>
+      <p>Standardized steps to prepare neural traces:</p>
+      <ol>
+        <li>Analog-to-digital conversion at edge (sample rates tuned per modality)</li>
+        <li>Bandpass filtering to remove DC drift and mains interference</li>
+        <li>Artifact rejection (eye-blink, muscle noise)</li>
+        <li>Feature extraction (power bands, temporal patterns)</li>
+      </ol>
+      <img src="Images/page3.png" width="400" height="400"><br><br>
+    </section>
+
+    <section>
+      <h2>Signal Quality Matrix (Example)</h2>
+      <table border="1">
+        <tr>
+          <th>Modality</th>
+          <th>Typical Use</th>
+          <th>Relative SNR</th>
+        </tr>
+        <tr>
+          <td>Scalp EEG</td>
+          <td>General intent detection</td>
+          <td>Medium</td>
+        </tr>
+        <tr>
+          <td>Ear-EEG</td>
+          <td>Discrete commands, wearable</td>
+          <td>Low–Medium</td>
+        </tr>
+        <tr>
+          <td>EMG</td>
+          <td>Gesture confirmation</td>
+          <td>High</td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>Notes for Prototype</h2>
+      <p>
+        For a conceptual HTML project, emphasize diagrams, process clarity, and user scenarios rather than raw signal
+        mathematics.
+        Keep explanations accessible to non-specialists.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <hr>
+    <p>© 2025 MindLink — Concept prototype. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
